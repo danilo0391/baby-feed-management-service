@@ -1,6 +1,7 @@
 name: pull-request
 on:
   push:
+    on: pull_request
 jobs:
   repo:
     name: Baixar codigo do git e cachear
@@ -15,4 +16,4 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: mvn -f management/ clean compile
+      - run: mvn clean compile
