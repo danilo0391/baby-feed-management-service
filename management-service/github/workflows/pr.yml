@@ -1,8 +1,6 @@
 name: pull-request
 on:
-  push:
-    paths:
-      - 'management/**'
+  pull_request:
 jobs:
   repo:
     name: Baixar codigo do git e cachear
