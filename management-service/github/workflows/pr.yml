@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   repo:
-    name: baixar todo codigo do git e cachear
+    name: Baixar codigo do git e cachear
     runs-on: ubuntu-latest
 
     steps:
@@ -15,4 +15,4 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: clean compile
+      - run: mvn -f management/ clean compile
