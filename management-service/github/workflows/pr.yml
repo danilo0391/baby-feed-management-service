@@ -1,0 +1,17 @@
+name: pull-request
+on: [push]
+jobs:
+  repo:
+    name: baixar todo codigo do git e cachear
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Installing Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - run: clean compile
