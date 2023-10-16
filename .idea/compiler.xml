@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="baby-feed-management-service" />
         <module name="management-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="baby-feed-management-service" target="17" />
       <module name="management-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="baby-feed-management-service" options="-parameters" />
       <module name="management-service" options="-parameters" />
     </option>
   </component>

@@ -1,6 +1,7 @@
 name: pull-request
 on:
-  pull_request:
+  push:
+    branch: main
 jobs:
   repo:
     name: Baixar codigo do git e cachear
