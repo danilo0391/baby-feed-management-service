@@ -10,7 +10,7 @@ public class RegisterItemController {
 
     @RequestMapping("/items")
     public String[] getAllItems(){
-        return new String[]{"Fralda", "Coco", "Formula", "120ml"};
+        return new String[]{"Fralda", "Coco", "Formula", "150ml"};
     }
 
     @RequestMapping("/items/id")
