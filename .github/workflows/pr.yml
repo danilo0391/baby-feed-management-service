@@ -16,4 +16,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: mvn test clean compile
+      - name: Build project with Maven
+        env:
+          ENV: test
+          spring_profiles_active: test
+        run: mvn package
